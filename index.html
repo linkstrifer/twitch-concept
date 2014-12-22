@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang=es>
+<head>
+	<meta charset=utf-8>
+	<title>Twitch.tv</title>
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/icons.css">
+	<link rel="stylesheet" href="static/css/twitch.css">
+</head>
+<body>
+	<header class="container-fluid Header">
+		<div class="row">
+			<div class="col-md-2 Header-logo">
+			</div>
+			<div class="col-md-6 col-md-offset-4">
+				<ul class="row HeaderMenu">
+					<li class="col-md-3 HeaderMenu-item">Games<i class="icon-down"></i></li>
+					<li class="col-md-4 HeaderMenu-item">Channels<i class="icon-down"></i></li>
+					<li class="col-md-3 HeaderMenu-item">Videos<i class="icon-down"></i></li>
+					<li class="col-md-2 HeaderMenu-item"><i class="icon-user"></i></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid MainSection">
+		<div class="row">
+			<div class="col-md-12 MainSection-highlightContainer">
+				<img src="http://i.imgur.com/TeTeMsd.jpg" alt="Titanfall">
+				<div class="MainSection-highlightData">
+					<p class="MainSection-play"><i class="icon-play"></i> Watch stream</p>
+					<h2 class="MainSection-title">Titanfall</h2>
+					<p class="MainSection-summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae enim sequi dolor culpa consectetur pariatur, iste, ea illo suscipit libero numquam fugiat, dolore neque atque odio commodi nemo nihil aliquam.</p>
+				</div>
+				<div class="MainSection-prev"><i class="icon-left"></i></div>
+				<div class="MainSection-next"><i class="icon-right"></i></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="MainSection-highlightList">
+				<ul class="row MainSection-listContainer">
+					<li class="col-md-3 MainSection-listItem is-active">
+						<span class="MainSection-listGame">Titanfall</span>
+						<span class="MainSection-listTitle">Pilots vs Titans</span>
+					</li>
+					<li class="col-md-3 MainSection-listItem">
+						<span class="MainSection-listGame">Destiny</span>
+						<span class="MainSection-listTitle">Guardians FTW</span>
+					</li>
+					<li class="col-md-3 MainSection-listItem">
+						<span class="MainSection-listGame">Starcraft II</span>
+						<span class="MainSection-listTitle">Protos never die</span>
+					</li>
+					<li class="col-md-3 MainSection-listItem">
+						<span class="MainSection-listGame">World of Warcraft: Warlords of Draenor</span>
+						<span class="MainSection-listTitle">Orcs over here, orcs over there, orcs everywhere</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+  WebFontConfig = {
+    google: { families: [ 'Open+Sans:400,300,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+  	</script>
+</body>
+</html>
