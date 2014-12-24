@@ -12,7 +12,10 @@ body {
   z-index: 1000000;
 }
 .Header-logo {
+  background-color: #6441a5;
   background-image: url("../images/header-logo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
   height: 70px;
 }
 .HeaderMenu-item {
@@ -109,18 +112,35 @@ body {
   margin: 0;
 }
 .MainSection-listItem {
+  cursor: pointer;
   display: inline-block;
   background-color: #f1f1f1;
   color: #292056;
   padding: 1em;
 }
+.MainSection-listItem:after {
+  content: '';
+  height: 10px;
+  width: 10px;
+  border-right: 2px dotted #292056;
+  border-bottom: 2px dotted #292056;
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+}
 .MainSection-listItem.is-active {
   background-color: #06050a;
   color: #fff;
 }
+.MainSection-listItem.is-active:after {
+  content: initial;
+}
 .MainSection-listItem:hover {
   background-color: #292056;
   color: #fff;
+}
+.MainSection-listItem:hover:after {
+  border-color: #fff;
 }
 .MainSection-listGame {
   display: block;
@@ -131,4 +151,110 @@ body {
   display: block;
   font-weight: bold;
   text-transform: uppercase;
+}
+.Games {
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+}
+.Games-game,
+.Games-game--full,
+.Games-game--half {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+}
+.Games-game--full {
+  float: left;
+  width: 66.66%;
+}
+.Games-game--full .Games-gameData {
+  bottom: 1rem;
+  color: #fff;
+  left: 1rem;
+  right: 10rem;
+  text-shadow: 2px 2px 10px #000;
+}
+.Games-game--half {
+  float: right;
+  width: 33.34%;
+}
+.Games-game--half .Games-gameData {
+  background: #fff;
+  bottom: 0;
+  color: #292056;
+  padding: 1rem;
+  right: 10rem;
+  top: 0;
+}
+.Games-game--half .Games-title {
+  font-size: 20px;
+}
+.Games-game--half .Games-description {
+  font-size: 12px;
+}
+.Games-game--half .Games-viewers {
+  position: absolute;
+  top: 0.5em;
+  font-size: 14px;
+}
+.Games-game--half:nth-child(even) .Games-gameData {
+  left: 0;
+  right: 50%;
+}
+.Games-game--half:nth-child(even) .Games-gameData:before {
+  content: '';
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid #fff;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  margin-top: -5px;
+}
+.Games-game--half:nth-child(odd) .Games-gameData {
+  left: 50%;
+  right: 0;
+}
+.Games-game--half:nth-child(odd) .Games-gameData:before {
+  content: '';
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 10px solid #fff;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  margin-top: -5px;
+}
+.Games-gameImg {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.Games-gameImg img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.Games-gameData {
+  bottom: 0;
+  position: absolute;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.Games-viewers {
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+}
+.Games-title {
+  font-weight: bold;
+  font-size: 26px;
+}
+.Games-description {
+  font-size: 14px;
 }

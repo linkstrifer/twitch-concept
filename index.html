@@ -2,7 +2,7 @@
 <html lang=es>
 <head>
 	<meta charset=utf-8>
-	<title>Twitch.tv</title>
+	<title>Twitch.tv - Redesign Concept</title>
 	<link rel="stylesheet" href="static/css/bootstrap.min.css">
 	<link rel="stylesheet" href="static/css/icons.css">
 	<link rel="stylesheet" href="static/css/twitch.css">
@@ -10,19 +10,19 @@
 <body>
 	<header class="container-fluid Header">
 		<div class="row">
-			<div class="col-md-2 Header-logo">
+			<div class="col-xs-3 col-md-2 Header-logo">
 			</div>
-			<div class="col-md-6 col-md-offset-4">
+			<div class="col-xs-9 col-md-6 col-md-offset-4">
 				<ul class="row HeaderMenu">
-					<li class="col-md-3 HeaderMenu-item">Games<i class="icon-down"></i></li>
-					<li class="col-md-4 HeaderMenu-item">Channels<i class="icon-down"></i></li>
-					<li class="col-md-3 HeaderMenu-item">Videos<i class="icon-down"></i></li>
-					<li class="col-md-2 HeaderMenu-item"><i class="icon-user"></i></li>
+					<li class="col-xs-3 col-md-3 HeaderMenu-item">Games<i class="icon-down"></i></li>
+					<li class="col-xs-4 col-md-4 HeaderMenu-item">Channels<i class="icon-down"></i></li>
+					<li class="col-xs-3 col-md-3 HeaderMenu-item">Videos<i class="icon-down"></i></li>
+					<li class="col-xs-2 col-md-2 HeaderMenu-item"><i class="icon-user"></i></li>
 				</ul>
 			</div>
 		</div>
 	</header>
-	<div class="container-fluid MainSection">
+	<section class="container-fluid MainSection">
 		<div class="row">
 			<div class="col-md-12 MainSection-highlightContainer">
 				<img src="http://i.imgur.com/TeTeMsd.jpg" alt="Titanfall">
@@ -57,7 +57,39 @@
 				</ul>
 			</div>
 		</div>
-	</div>
+	</section>
+	<section class="container-fluid Games">
+		<div class="Games-game--full">
+			<div class="Games-gameImg">
+				<img src="http://i.imgur.com/TeTeMsd.jpg" alt="Titanfall">
+			</div>
+			<div class="Games-gameData">
+				<span class="Games-viewers">12934123 viewers</span>
+				<h3 class="Games-title">League of Legends</h3>
+				<p class="Games-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ab distinctio ducimus veniam fugit quam nobis. Excepturi velit totam autem, tenetur nemo, suscipit tempora dolorem ratione eius, amet voluptatibus ipsam?</p>
+			</div>
+		</div>
+		<div class="Games-game--half">
+			<div class="Games-gameImg">
+				<img src="http://i.imgur.com/TeTeMsd.jpg" alt="Titanfall">
+			</div>
+			<div class="Games-gameData">
+				<span class="Games-viewers">12934123 viewers</span>
+				<h3 class="Games-title">League of Legends</h3>
+				<p class="Games-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nam, omnis dolorem impedit, officiis tenetur nesciunt vero eligendi rem vitae ea commodi quia voluptas sed laudantium id accusantium numquam veritatis.</p>
+			</div>
+		</div>
+		<div class="Games-game--half">
+			<div class="Games-gameImg">
+				<img src="http://i.imgur.com/TeTeMsd.jpg" alt="Titanfall">
+			</div>
+			<div class="Games-gameData">
+				<span class="Games-viewers">12934123 viewers</span>
+				<h3 class="Games-title">League of Legends</h3>
+				<p class="Games-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt facilis sunt eligendi doloremque accusantium quasi in recusandae neque quisquam enim nihil consequuntur, eius vitae debitis molestiae expedita id sequi reiciendis.</p>
+			</div>
+		</div>
+	</section>
 	<script>
   WebFontConfig = {
     google: { families: [ 'Open+Sans:400,300,700:latin' ] }

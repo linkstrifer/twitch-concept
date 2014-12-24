@@ -1,0 +1,109 @@
+.Games
+	padding 0
+	line-height 0
+	font-size 0
+
+.Games-game
+	cursor pointer
+	display inline-block
+	overflow hidden
+	position relative
+	vertical-align top
+
+.Games-game--full
+	@extends .Games-game
+	float left
+	width 66.66%
+	
+	.Games-gameData
+		bottom 1rem
+		color white
+		left 1rem
+		right 10rem
+		text-shadow 2px 2px 10px rgba(0,0,0,1)
+
+.Games-game--half
+	@extends .Games-game
+	float right
+	width 33.34%
+		
+	.Games-gameData
+		background white
+		bottom 0
+		color purple
+		padding 1rem
+		right 10rem
+		top 0
+	
+	.Games-title
+		font-size 20px
+	
+	.Games-description
+		font-size 12px
+	
+	.Games-viewers
+		position absolute
+		top .5em
+		font-size 14px
+		
+	&:nth-child(even)
+		
+		.Games-gameData
+			left 0
+			right 50%
+			
+			&:before
+				content ''
+				border-top 5px solid transparent
+				border-bottom 5px solid transparent
+				border-left 10px solid white
+				position absolute
+				right -10px
+				top 50%
+				margin-top -5px
+	
+	&:nth-child(odd)
+		
+		.Games-gameData
+			left 50%
+			right 0
+			
+			&:before
+				content ''
+				border-top 5px solid transparent
+				border-bottom 5px solid transparent
+				border-right 10px solid white
+				position absolute
+				left -10px
+				top 50%
+				margin-top -5px
+
+.Games-gameImg
+	height 0
+	padding-bottom 56.25%
+	position relative
+	
+	img
+		height 100%
+		left 0
+		position absolute
+		top 0
+		width 100%
+
+.Games-gameData
+	bottom 0
+	position absolute
+	font-size 1rem
+	line-height 1.5rem
+
+.Games-viewers
+	display block
+	font-weight bold
+	font-size 15px
+
+.Games-title
+	font-weight bold
+	font-size 26px
+
+.Games-description
+	font-size 14px
